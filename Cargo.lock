@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "STM32"
+name = "stm32_disco_test"
 version = "0.1.0"
