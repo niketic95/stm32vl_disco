@@ -1,6 +1,9 @@
 [build]
 target = "thumbv7m-none-eabi"
 
+[target.thumbv7m-none-eabi]
+runner = "qemu-system-arm -machine lm3s6965evb -display sdl -S -s -kernel"
+
 [target.'cfg(all(target_arch = "arm", target_os = "none"))']
 rustflags = [
     "-C", "link-arg=-Llsl",
